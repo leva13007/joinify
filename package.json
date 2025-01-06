@@ -1,6 +1,43 @@
 {
   "name": "joinify",
-  "version": "0.0.1",
-  "main": "index.js",
-  "license": "MIT"
+  "description": "A utility library for concatinate strings.",
+  "version": "1.0.0",
+  "author": "Oleh Levchenko <@leva13007>",
+  "license": "MIT",
+  "main": "dist/joinify.cjs.js",
+  "module": "dist/joinify.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf dist && rollup -c && rimraf dist/tests",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "keywords": [
+    "concatinate",
+    "utility",
+    "javascript",
+    "typescript",
+    "stringify",
+    "library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leva13007/joinify.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.24.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  }
 }
